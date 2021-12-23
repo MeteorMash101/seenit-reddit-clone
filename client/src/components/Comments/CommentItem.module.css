@@ -1,0 +1,19 @@
+.wrapper {
+    /* border: 2px solid rgb(241, 126, 31); */
+    display: flex;
+    padding: 1px;
+    margin: 4px;
+    margin-top: 10px;
+}
+
+/* temp style */
+.miniLogo {
+    filter: invert(1) sepia(1) saturate(2) hue-rotate(100deg);
+    max-width: 40px;
+    max-height: 40px;    
+}
+
+.replyBtn {
+    width: 10%;
+    height: 25px;
+}

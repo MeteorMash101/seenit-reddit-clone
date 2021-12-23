@@ -1,0 +1,31 @@
+.wrapper {
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+}
+
+/* temp style */
+.subLogo {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+    max-width: 40px;
+    max-height: 40px;
+}
+
+#green {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(50deg);
+}
+
+#orange {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(351deg);
+}
+
+#pink {
+    filter: invert(1) sepia(1) saturate(2) hue-rotate(277deg);
+}
+
+
+.miniHdrTxt {
+    margin-left: 15px;
+}

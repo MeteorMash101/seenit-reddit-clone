@@ -1,0 +1,8 @@
+.wrapper {
+    /* border: 4px solid rgb(206, 90, 90); */
+    display: flex;
+    height: 2000px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(224, 236, 243);
+}

@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    /* border: 2px solid yellow;  */
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 50px;
+}
+
+.btns {
+    border: none;
+    background: transparent;
+    width: 20%;
+    height: auto;
+}
+
+.btns:hover {
+    color: lightskyblue;
+}
+
+#selected {
+    background: rgb(75, 94, 105);
+    color: lightskyblue;
+    border-bottom: 2px solid rgb(35, 55, 63);
+}

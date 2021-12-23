@@ -1,0 +1,10 @@
+.homeBtn {
+    display: flex;
+    align-items: center;
+    width: 270px;
+}
+
+.homeBtnTxt {
+    padding-top: 5px;
+    margin-left: 12px;
+}

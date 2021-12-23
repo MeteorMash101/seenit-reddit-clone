@@ -1,0 +1,10 @@
+.header {
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    padding: 14px;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+}

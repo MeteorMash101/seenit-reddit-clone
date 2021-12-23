@@ -1,0 +1,30 @@
+.wrapper {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: 300px;
+    margin: 5% 1%;
+}
+
+.h4 {
+    text-align: center;
+    /* border-bottom: 2px solid rgb(64, 206, 140); */
+}
+
+.btn {
+    width: 85%;
+    height: 20%;
+    margin: 1%;
+    background-color: rgb(102, 162, 211);
+    color: white;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: rgb(183, 212, 236);
+    color: rgb(51, 135, 204);
+}

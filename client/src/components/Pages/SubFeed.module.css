@@ -1,0 +1,16 @@
+.container {
+    border: 4px solid rgb(104, 5, 5);
+    display: flex;
+    flex-direction: column;
+    height: 2000px;
+    align-items: center;
+    background-color: rgb(224, 236, 243);
+}
+
+.wrapper {
+    border: 5px solid rgb(117, 209, 94);    
+    width: 100%;
+    height: 1800px;
+    display: flex;
+    justify-content: center;
+}

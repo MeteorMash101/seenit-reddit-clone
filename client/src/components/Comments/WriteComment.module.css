@@ -1,0 +1,17 @@
+.username {
+    color: rgb(50, 112, 112);
+}
+
+.commentTxt {
+    width: 95%;
+    height: 170px;
+    font-size: 26px;
+}
+
+.postCmt {
+    width: 15%;
+    height: 30px;
+    background-color: rgb(57, 120, 255);
+    color: white;
+    border-radius: 8px;
+}

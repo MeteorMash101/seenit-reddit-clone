@@ -1,0 +1,8 @@
+.wrapper {
+    /* border: 2px solid rgb(89, 180, 189); */
+    background: rgb(213, 216, 216);
+    display: flex;
+    width: 6%;
+    flex-direction: column;
+    align-items: center;
+}

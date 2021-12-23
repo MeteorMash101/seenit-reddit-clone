@@ -1,0 +1,40 @@
+.wrapper {
+    overflow: hidden;
+    background-color: whitesmoke;
+    display: flex;
+    width: 90%;
+    height: 230px;
+    margin: 2%;
+    border-radius: 10px;
+    border: 2px solid rgb(54, 53, 53);
+}
+
+/* LINK TAG became wrapper for this body... */
+.postBody {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 8px;
+    padding: 1%;
+    text-decoration: none;
+    color: black;
+}
+
+/* NOTE: This affects all hovering links */
+a:hover {
+    color: rgb(179, 60, 133)
+}
+
+.postTitle {
+    margin: 5px;
+}
+
+.postContent {
+    /* border: 2px solid rgb(233, 10, 177); */
+    width: 98%;
+    height: 200px;
+    min-height: 100px;
+    margin: 3px;
+    overflow: hidden;
+}

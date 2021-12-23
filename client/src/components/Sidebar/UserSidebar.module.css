@@ -1,0 +1,9 @@
+.wrapper {
+    border: 2px solid lightcoral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26%;
+    height: 100%;
+    margin-top: 1%;
+}
