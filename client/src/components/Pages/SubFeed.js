@@ -12,7 +12,7 @@ const SubFeed = (props) => {
       <div className={classes.container}>
         <SubHeader/>
         <div className={classes.wrapper}>
-          <PostFeed posts={props.posts}/>
+          <PostFeed postsList={props.postsList}/>
           <SubSidebar/>
         </div>
       </div>

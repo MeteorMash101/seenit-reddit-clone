@@ -30,3 +30,11 @@
     margin: 3px;
     overflow: hidden;
 }
+
+.postViewOpts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 60px;
+}

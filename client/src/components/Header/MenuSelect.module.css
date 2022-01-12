@@ -1,10 +1,36 @@
-.homeBtn {
+.container {
+    /* border: 2px solid rgb(243, 0, 0); */
+    width: 15%;
+    position: relative;
+    margin-left: -5.5%;
+}
+
+.wrapper {
+    border: 2px solid rgb(74, 25, 78);
+    background-color: rgb(180, 118, 199);
+    border-radius: 5px;
     display: flex;
     align-items: center;
-    width: 270px;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    padding: 4px;
+    cursor: pointer;
 }
 
 .homeBtnTxt {
+    display: inline;
     padding-top: 5px;
-    margin-left: 12px;
+    margin-left: 4%;
+}
+
+.icon {
+    margin-bottom: 14px;
+}
+
+.iconHome {
+    /* border: 2px solid yellow; */
+    display: "flex";
+    width: 100%;
+    height: 36px;
 }

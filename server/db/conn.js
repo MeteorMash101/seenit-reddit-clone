@@ -1,27 +1,21 @@
-// Connecting to mongodb ATLAS cloud db
-const { MongoClient } = require("mongodb");
-const Db = process.env.ATLAS_URI;
-const client = new MongoClient(Db, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
- 
-var _db;
- 
-module.exports = {
-  connectToServer: function (callback) {
-    client.connect(function (err, db) {
-      // Verify we got a good "db" object
-      if (db)
-      {
-        _db = db.db("Cluster0SEENIT");
-        console.log("Successfully connected to MongoDB."); 
-      }
-      return callback(err);
-    });
-  },
- 
-  getDb: function () {
-    return _db;
-  },
-};
+// Connecting to MongoDB ATLAS cloud db
+const mongoose = require('mongoose');
+const connectDB = async () => {
+  try {
+    const conn = await mongoose.connect(process.env.ATLAS_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
+    console.log(`MongoDB Connected!: ${conn.connection.host}`)
+  } catch (err) {
+    console.error(err)
+    process.exit(1)
+  }
+}
+
+const closeDB = () => {
+  mongoose.connection.close();
+}
+
+module.exports.connectDB = connectDB
+module.exports.closeDB = closeDB

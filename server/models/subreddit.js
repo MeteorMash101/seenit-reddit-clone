@@ -7,7 +7,7 @@ const SubredditSchema = new Schema({
     name: String,
     description: String,
     numOfMembers: Number,
-    numOfActiveMembers: Number,
+    // numOfActiveMembers: Number, (need to be able to track online users for this one)
     posts: [
         {
             type: Schema.Types.ObjectId,

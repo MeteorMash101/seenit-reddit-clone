@@ -1,0 +1,27 @@
+.wrapper {
+    /* border: 2px solid rgb(43, 89, 107); */
+    border-radius: 8px;
+    width: 20%;
+    height: 92%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    width: 38%;
+    height: 80%;
+    background-color: transparent;
+    border: 2px solid rgb(43, 89, 107);
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(177, 213, 228);
+    color: white;
+}
+
+#signup {
+    background-color: rgb(73, 152, 184);
+}

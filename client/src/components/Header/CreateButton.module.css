@@ -1,6 +1,8 @@
 .createBtn {
     width: 70px;
     height: 70px;
-    background-color: transparent;
+    background-color: rgb(235, 98, 98);
+    border: 2px solid black;
+    border-radius: 5px;
     font-size: 35px;
 }

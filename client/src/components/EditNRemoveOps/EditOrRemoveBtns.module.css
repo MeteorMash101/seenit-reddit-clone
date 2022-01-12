@@ -1,0 +1,19 @@
+.wrapper {
+    /* border: 2px solid black; */
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+#edit {
+    background-color: rgb(241, 182, 72);
+}
+
+#remove {
+    background-color: rgb(255, 43, 43);
+    color: white;
+}

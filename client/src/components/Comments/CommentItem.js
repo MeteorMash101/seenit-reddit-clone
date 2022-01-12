@@ -5,6 +5,7 @@ const CommentItem = (props) => {
   return (
     <div className={classes.wrapper}>
         <img className={classes.miniLogo} src={logo} alt="Logo"/>
+        {/* map its children into new comment item? can this be done recursively? */}
         <CommentInfo/>
     </div>
 

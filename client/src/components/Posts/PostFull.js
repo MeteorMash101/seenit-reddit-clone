@@ -2,17 +2,33 @@ import classes from './PostFull.module.css';
 import VoteBar from './VoteBar.js';
 import MiniHeader from './MiniHeader';
 import CommentSection from '../Comments/CommentSection';
+import PostViewOpts from './PostViewOpts';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const PostFull = (props) => {
+  const [currPost, setCurrPost] = useState("Loading...");
+  useEffect(() => {
+    const fetchPost = async () => {
+      const post = await axios.get(`http://localhost:4000/posts/${props.post_id}`)
+      console.log("[DEBUG]: current post received from db:", post.data)
+      setCurrPost(post.data)
+    }
+    fetchPost();
+  }, [])
+  const addCommentHandler = async (eComment) => {
+    console.log("comment entered:", eComment)
+    currPost.comments.push(eComment);
+  }
   return (
     <div className={classes.wrapper}>
         <VoteBar/>
         <div className={classes.postFullBody}>
-          <MiniHeader/>
-          {/* title of PostFull */}
-          <h2 className={classes.PostFullTitle}>How to find love in a world so cruel?</h2>
-          <p className={classes.PostFullContent}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          <CommentSection/>
+          <MiniHeader post_id={props.post_id} author_id={currPost.author_id} onRemovePost={props.onRemovePost}/>
+          <h2 className={classes.postFullTitle}>{currPost.title}</h2>
+          <p className={classes.postFullContent}>{currPost.content}</p>
+          <PostViewOpts className={classes.postViewOpts}/>
+          <CommentSection commentsData={currPost.comments} onAddComment={addCommentHandler}/>
         </div>
     </div>
   );

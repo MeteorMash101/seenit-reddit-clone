@@ -21,8 +21,8 @@
     color: white;
 }
 .userStats {
-    border-top: 2px dashed rgb(151, 38, 38);
-    border-bottom: 2px dashed rgb(151, 38, 38);
+    /* border-top: 2px dashed rgb(151, 38, 38); */
+    /* border-bottom: 2px dashed rgb(151, 38, 38); */
     color: rgb(151, 38, 38);
     display: flex;
     width: 100%;

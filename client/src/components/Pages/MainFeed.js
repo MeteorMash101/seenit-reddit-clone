@@ -10,7 +10,7 @@ const MainFeed = (props) => {
     <Fragment>
       <Header/>
       <div className={classes.container}>
-        <PostFeed posts={props.posts}/>
+        <PostFeed postsList={props.postsList} onRemovePost={props.onRemovePost}/>
         <Sidebar/>
       </div>
     </Fragment>

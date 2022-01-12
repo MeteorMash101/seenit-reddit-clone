@@ -15,3 +15,8 @@
     color: white;
     border-radius: 8px;
 }
+
+.tempHack {
+    border: 2px solid transparent;
+    /* margin-top: 20px; */
+}

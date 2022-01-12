@@ -1,8 +1,13 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import UserContext from '../../store/user-context';
 import classes from './PostForm.module.css';
 import PostOpts from './PostOpts';
 
 const PostForm = (props) => {
+	const userContext = useContext(UserContext);
+	const author_id = userContext.user_id; // the current user is the author of this post.
+	const author_username = userContext.username;
+
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredText, setEnteredText] = useState('');
   const titleChangeHandler = (event) => {
@@ -14,7 +19,7 @@ const PostForm = (props) => {
   const addPostHandler = (event) => {
     event.preventDefault();
     // EDIT: add err checking
-    props.submissionHandlers.onAddPost(enteredTitle, enteredText)
+    props.submissionHandlers.onAddPost(enteredTitle, enteredText, author_id, author_username)
   }
 
   return (

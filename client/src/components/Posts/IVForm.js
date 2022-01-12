@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import classes from './IAForm.module.css';
+import classes from './IVForm.module.css';
 import PostOpts from './PostOpts';
 import MediaThumbnail from './MediaThumbnail.js';
 

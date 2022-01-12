@@ -1,6 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
+    background-color: rgb(61, 61, 61);
 }
 .wrapper {
     /* border: 2px solid yellow;  */
@@ -15,6 +16,7 @@
     background: transparent;
     width: 20%;
     height: auto;
+    color: white;
 }
 
 .btns:hover {

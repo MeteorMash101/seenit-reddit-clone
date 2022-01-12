@@ -1,0 +1,73 @@
+.container {
+    border: 2px solid black;
+    background-color: rgb(243, 203, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 600px;
+    /* for centering */
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*  */
+    padding: 5%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+    /* position: fixed; */
+}
+
+.wrapper1 {
+    /* border: 2px solid black; */
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+.wrapper2 {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* this is just the dimmed BG that we can click to exit modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 40rem;
+        left: calc(50% - 20rem);
+    }
+}
+  
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

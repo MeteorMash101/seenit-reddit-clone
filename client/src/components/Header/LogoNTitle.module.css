@@ -7,11 +7,11 @@
 
 .logo {
     filter: invert(1) sepia(1) saturate(3) hue-rotate(280deg);
-    width: 80px;
-    height: 80px;
+    width: 40%;
+    height: 60px;
 }
 
 .h1 {
     display: inline;
-    margin-left: 20px;
+    margin-left: 8%;
 }

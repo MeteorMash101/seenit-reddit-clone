@@ -1,11 +1,14 @@
 .wrapper {
+    border: 1px solid black;
     display: flex;
+    /* width: 25%; */
 }
 
 .searchInput {
     width: 300px;
-    height: 50px;
+    height: 56px;
     font-size: 20px;
+    background-color: rgb(233, 233, 233);
 }
 
 .searchBtn {

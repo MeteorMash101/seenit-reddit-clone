@@ -1,0 +1,20 @@
+
+
+.btn {
+    display: flex;
+    width: 26%;
+    height: 30px;
+    justify-content: center;
+    background-color: rgb(108, 129, 170);
+    /* save this color for selection? */
+    /* background-color: rgb(146, 172, 230); */
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.icon {
+    /* border: 2px solid black; */
+    margin-top: 3px;
+    margin-right: 3px;
+}

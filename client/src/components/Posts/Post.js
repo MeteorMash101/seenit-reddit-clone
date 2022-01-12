@@ -2,17 +2,26 @@ import classes from './Post.module.css';
 import VoteBar from './VoteBar.js';
 import MiniHeader from './MiniHeader';
 import { Link } from 'react-router-dom';
+import PostViewOpts from './PostViewOpts';
 
 const Post = (props) => {
+  // TEMP STUFF: random subreddit color idx 0, 1, 2
+  const idx = Math.floor(Math.random() * 3); 
+  const leddits = ["funny", "memes", "cute"];
   return (
     <div className={classes.wrapper}>
         <VoteBar/>
-        <Link to='/post' className={classes.postBody} style={{background: props.color}}>
-          <MiniHeader subreddit={props.subreddit}/>
+        <div className={classes.postBody}>
+          <MiniHeader subreddit={leddits[idx]} post_id={props.post_id} author_id={props.author_id} author_username={props.author_username} onRemovePost={props.onRemovePost}/>
           {/* title of post */}
-          <h2 className={classes.postTitle}>How to find love in a world so cruel?</h2>
-          <p className={classes.postContent}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </Link>
+          <Link to={`/post/${props.post_id}`} className={classes.postLink}>
+            <h2 className={classes.postTitle}>{props.title}</h2>
+            {/* Default text for now...too long to have as input */}
+            <p className={classes.postContent}>{props.content}</p>
+            {/* This component is used elsewhere as well, so customize the CSS class like so. */}
+            <PostViewOpts className={classes.postViewOpts}/>
+          </Link>
+        </div>
     </div>
   );
 }

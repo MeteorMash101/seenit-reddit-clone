@@ -7,6 +7,7 @@ import PostFeed from '../Posts/PostFeed';
 import UserViewOpts from '../Header/UserViewOpts';
 
 const UserProfile = (props) => {
+  console.log("here")
   const [view, setView] = useState("all");
 	const viewChangeHandler = (viewChoice) => {
 		setView(viewChoice)
@@ -16,7 +17,7 @@ const UserProfile = (props) => {
       <Header/>
       <UserViewOpts onChangeView={viewChangeHandler} currView={view}/>
       <div className={classes.container}>
-        <PostFeed posts={props.posts}/>
+        <PostFeed postsList={props.postsList}/>
         <UserSidebar/>
       </div>
     </Fragment>

@@ -2,39 +2,35 @@ import { useState } from 'react';
 import classes from './PostOpts.module.css';
 
 const PostOpts = (props) => {
-  // const [submissionType, setSubmissionType] = useState("post"); // post opt. by default
   // B/c whole component gets re-rendered when state change, this should init the 'selected's.
-  let pSelected = "", IASelected = "", lSelected = "";
+  let pSelected = "", IVSelected = "", lSelected = "";
   switch(props.formType) {
-    case "post":
+    case "TEXT":
       pSelected = classes.selected;
       break;
-    case "IA":
-      IASelected = classes.selected;
+    case "IV":
+      IVSelected = classes.selected;
       break;
-    case "link":
+    case "LINK":
       lSelected = classes.selected;
       break;
     default:
       // continue
   }
   const optionChangedHandler = (event) => {
-    if (event.target.name == "post") {
-      // setSubmissionType("post")
-      props.onSetFormType("post")
-    } else if (event.target.name == "IA") {
-      // setSubmissionType("IA")
-      props.onSetFormType("IA")
-    } else if (event.target.name == "link") {
-      // setSubmissionType("link")
-      props.onSetFormType("link")
+    if (event.target.name == "TEXT") {
+      props.onSetFormType("TEXT")
+    } else if (event.target.name == "IV") {
+      props.onSetFormType("IV")
+    } else if (event.target.name == "LINK") {
+      props.onSetFormType("LINK")
     }
   }
   return (
     <div className={classes.wrapper}>
-        <button name="post" type="button" className={classes.btn} id={pSelected} onClick={optionChangedHandler}>Post</button>
-        <button name="IA" type="button" className={classes.btn} id={IASelected} onClick={optionChangedHandler}>Images / Audio</button>
-        <button name="link" type="button" className={classes.btn} id={lSelected} onClick={optionChangedHandler}>Link</button>
+        <button name="TEXT" type="button" className={classes.btn} id={pSelected} onClick={optionChangedHandler}>Post</button>
+        <button name="IV" type="button" className={classes.btn} id={IVSelected} onClick={optionChangedHandler}>Images / Video</button>
+        <button name="LINK" type="button" className={classes.btn} id={lSelected} onClick={optionChangedHandler}>Link</button>
     </div>
   );
 }
