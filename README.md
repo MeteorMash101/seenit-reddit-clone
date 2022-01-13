@@ -1,15 +1,15 @@
 # Seenit (Reddit Clone - Attempt!)
 Hello! This will be one of my 'many' attempts at a full-stack MERN (MongoDB, ExpressJS, ReactJS, NodeJS) web application! After around ~ 1 week of spending full-time hours, I am quite happy with how this has come about so far. There are still so many features to be added but below are some snapshots & descriptions of what has been completeed thus far.
 
-![alt text](https://github.com/MeteorMash101/seenit/blob/master/snapshots/pics_1.png?raw=true)
+![alt text](https://github.com/MeteorMash101/seenit-reddit-clone/blob/master/snapshots/pics_1.png?raw=true)
 
-![alt text](https://github.com/MeteorMash101/seenit/blob/master/snapshots/pics_2.png?raw=true)
+![alt text](https://github.com/MeteorMash101/seenit-reddit-clone/blob/master/snapshots/pics_2.png?raw=true)
 
-![alt text](https://github.com/MeteorMash101/seenit/blob/master/snapshots/pics_3.png?raw=true)
+![alt text](https://github.com/MeteorMash101/seenit-reddit-clone/blob/master/snapshots/pics_3.png?raw=true)
 
-![alt text](https://github.com/MeteorMash101/seenit/blob/master/snapshots/pics_4.png?raw=true)
+![alt text](https://github.com/MeteorMash101/seenit-reddit-clone/blob/master/snapshots/pics_4.png?raw=true)
 
-![alt text](https://github.com/MeteorMash101/seenit/blob/master/snapshots/pics_5.png?raw=true)
+![alt text](https://github.com/MeteorMash101/seenit-reddit-clone/blob/master/snapshots/pics_5.png?raw=true)
 ## Motivation:
 I am actually an avid user of Reddit, and probably spend more time on there than I do on most social media. I actually enjoy reading about various topics of interest and I love the features of the app with upvotes and downvotes. I believe its a fun way to spend my freetime!
 
