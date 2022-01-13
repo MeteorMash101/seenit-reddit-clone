@@ -10,6 +10,9 @@ Hello! This will be one of my 'many' attempts at a full-stack MERN (MongoDB, Exp
 ![alt text](https://github.com/MeteorMash101/seenit-reddit-clone/blob/master/snapshots/pics_4.png?raw=true)
 
 ![alt text](https://github.com/MeteorMash101/seenit-reddit-clone/blob/master/snapshots/pics_5.png?raw=true)
+
+**Tech Stack: HTML/CSS/Javascript, React, Express, Mongodb, Node.
+
 ## Motivation:
 I am actually an avid user of Reddit, and probably spend more time on there than I do on most social media. I actually enjoy reading about various topics of interest and I love the features of the app with upvotes and downvotes. I believe its a fun way to spend my freetime!
 
